@@ -2,7 +2,7 @@ set :application, "paster"
 set :domain,      "app1"
 set :user, 'root'
 set :deploy_to,   "/var/www/paster"
-set :repository,  "git@bitbucket.org:peinwag/paster.git"
+set :repository,  "git@github.com:peinwag/urlpaster.git"
 set :scm,         :git
 set :deploy_via, :remote_cache
 set :model_manager, "doctrine"
