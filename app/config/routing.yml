@@ -1,0 +1,5 @@
+pew_paster:
+    resource: "@PewPasterBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

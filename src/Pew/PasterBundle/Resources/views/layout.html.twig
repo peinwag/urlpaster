@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pewPaster</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% stylesheets '@PewPasterBundle/Resources/public/css/jquery.mobile-1.4.2.min.css' %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+        {% javascripts
+            '@PewPasterBundle/Resources/public/js/jquery.js'
+            '@PewPasterBundle/Resources/public/js/jquery.mobile-1.4.2.min.js'
+        %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+        <link rel="stylesheet" href="" />
+    </head>
+    <body>
+        <div data-role="page" id="startpage" data-theme="a">
+
+            <div data-role="header">
+                <h1>URL | paster</h1>
+            </div>
+            <div role="main" class="ui-content">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </body>
+</html>
